@@ -12,13 +12,13 @@ const Ecosystem = () => {
       id: 1,
       icon: Visit,
       link: "https://visitporto.travel/pt-PT",
-      title: "Visit Porto",
+      title: "Visit Porto.",
     },
     {
       id: 2,
       icon: Invest,
       link: "https://www.investporto.pt/en/",
-      title: "InvestPorto",
+      title: "Invest Porto.",
     },
     {
       id: 3,

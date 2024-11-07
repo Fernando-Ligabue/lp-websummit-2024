@@ -60,7 +60,7 @@ const eventsData = [
       "<p>‘Founder Tales’ is a podcast that takes its listeners behind the scenes of Portuguese startups and reveals the most unique stories of their founders.<br /><br />  In this special episode, recorded live at the Web Summit, we welcome Clara Gonçalves, co-founder of Inductiva.AI, to share her journey and insights into the vibrant entrepreneurial scene in Porto.",
     start: "2024-11-12T15:00",
     end: "2024-11-12T16:00",
-    legend: "ScaleUp",
+    legend: "ScaleUp Porto",
     category: "scaleup",
   },
   {
@@ -81,7 +81,7 @@ const eventsData = [
       "<p>A conversation between Pedro Santa Clara (42 Porto) and Gulherme Braz (BLIP), moderated by Isabel Geriante (ISS TECH) about the intersections of reskilling, upskilling and technological innovation.</p> ",
     start: "2024-11-13T09:30",
     end: "2024-11-13T10:30",
-    legend: "Tera.",
+    legend: "Tera",
     category: "tera",
   },
   {
@@ -148,17 +148,38 @@ const eventsData = [
     category: "investPorto",
   },
   {
+    id: 12,
+    title: "Talk: Organizational Innovation in Tourism: Trends and Transformation",
+    details:
+      "<p>A conversation between Yotel and Porto Business School, moderated António Marto (Fórum Turismo) about Organizational Innovation in Tourism, its trends and transformation.</p><br /> ",
+    label: "11:00am - 12:00pm",
+    start: "2024-11-14T11:00",
+    end: "2024-11-14T11:30",
+    legend: "Visit Porto.",
+    category: "visit",
+  },
+  {
     id: 13,
+    title: "Toast to Porto | Great Wine Capitals",
+    details:
+    "Fine Wines, long-standing bonds, that’s Porto. Join us for a Toast with Porto Wine at our Stand! <br /><br /> Winemakers gather and cross-reference knowledge. Conductors who compose symphonies based on thousands of possible notes.",
+    start: "2024-11-14T12:00",
+    end: "2024-11-14T12:30",
+    legend: "Porto.",
+    category: "porto",
+  },
+  {
+    id: 14,
     title: "LEME - Challenge prize announcement",
     details: "Come collect your prize!",
     label: "15:30pm - 16:00pm",
     start: "2024-11-14T15:00",
     end: "2024-11-14T15:30",
-    legend: "Leme.",
+    legend: "Leme",
     category: "leme",
   },
   {
-    id: 14,
+    id: 15,
     title: "Toast to Porto| Great Wine Capitals  ",
     details:
       "Fine Wines, long-standing bonds, that’s Porto. Join us for a Toast with Porto Wine at our Stand! <br /><br /> Winemakers gather and cross-reference knowledge. Conductors who compose symphonies based on thousands of possible notes.",
@@ -189,7 +210,7 @@ const Modal = ({ event, onClose }) => {
           dangerouslySetInnerHTML={{ __html: event.details }}
         />
         <XIcon
-          size={30}
+          size={20}
           onClick={onClose}
           className="absolute top-2 right-1 cursor-pointer"
         />

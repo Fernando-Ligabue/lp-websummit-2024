@@ -30,16 +30,16 @@ const Footer = () => {
                 Connect to Porto
               </p>
               <div className="flex justify-between items-center gap-6 font-custom font-light text-lg text-[#000F9F]">
-                <a href="https://www.linkedin.com/company/camaramunicipalporto/" target="_blank">
+                <a href="https://www.linkedin.com/company/camaramunicipalporto/" target="_blank" rel="noopener noreferrer">
                   <FaLinkedinIn size={24} />
                 </a>
-                <a href="https://www.facebook.com/CamaraMunicipaldoPorto" target="_blank">
+                <a href="https://www.facebook.com/CamaraMunicipaldoPorto" target="_blank" rel="noopener noreferrer">
                   <FaFacebookF size={24} />
                 </a>
-                <a href="https://www.instagram.com/cmporto/?hl=pt" target="_blank">
+                <a href="https://www.instagram.com/cmporto/?hl=pt" target="_blank" rel="noopener noreferrer">
                   <FaInstagram size={24} />
                 </a>
-                <a href="https://www.youtube.com/user/CamaraDoPorto" target="_blank">
+                <a href="https://www.youtube.com/user/CamaraDoPorto" target="_blank" rel="noopener noreferrer">
                   <FaYoutube size={24} />
                 </a>
               </div>
@@ -51,14 +51,14 @@ const Footer = () => {
           <div className="w-full max-w-max p-2 flex gap-8">
             <a
               href="https://www.porto.pt/en/privacy-policy"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               className="font-custom font-medium text-lg text-[#000F9F]"
             >
               Privacy Policy
             </a>
             <a
               href="https://www.porto.pt/en/cookies-policy"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               className="font-custom font-medium text-lg text-[#000F9F]"
             >
               Cookies Policy
