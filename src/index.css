@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-gradient-custom {
+    background: linear-gradient(to top, rgba(105, 255, 217, 07), rgba(255, 255, 255, 0) 24%);
+  }
+}
+
+@font-face {
+  font-family: 'AtypDisplay';
+  src: url('./fonts/AtypDisplay-Regular.otf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'AtypDisplay-Bold';
+  src: url('./fonts/AtypDisplay-Bold.otf') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'AtypDisplay';
+  src: url('./fonts/AtypDisplay-BoldItalic.otf') format('truetype');
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #EFEFEF;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
