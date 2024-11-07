@@ -9,13 +9,13 @@ const Header = () => {
       transition={{ duration: 0.5, delay: 0.2 }}
     >
       <div className="w-full max-w-[1140px] flex flex-col md:flex-row justify-between items-center gap-4 mx-auto">
-        <a href="https://www.porto.pt/pt/" target="_blank"><img src={Logo} alt="Logo" className="w-32" /></a>
+        <a href="https://www.porto.pt/pt/" target="_blank" rel="noopener noreferrer"><img src={Logo} alt="Logo" className="w-32" /></a>
         <div>
           <div className="w-full flex flex-col md:flex-row justify-between items-center pt-1 gap-6">
             <p className="w-fit font-custom font-medium text-porto-500">
               <strong>12 - 14 - NOV, 2024</strong>
             </p>
-            <a href="https://websummit.com/appearances/lis24/851eff96-e5b8-4351-b701-3b9a75c725ad/porto" target="_blank" className="w-fit font-custom font-normal text-porto-500">
+            <a href="https://websummit.com/appearances/lis24/851eff96-e5b8-4351-b701-3b9a75c725ad/porto" target="_blank" rel="noopener noreferrer" className="w-fit font-custom font-normal text-porto-500">
               <strong className="font-bold">WEB SUMMIT</strong> | LISBON
             </a>
             <a

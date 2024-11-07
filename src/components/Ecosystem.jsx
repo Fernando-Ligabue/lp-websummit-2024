@@ -68,11 +68,11 @@ const Ecosystem = () => {
               key={sector.id}
               className="w-full flex flex-col justify-center items-center gap-4 my-8"
             >
-              <a href={sector.link} target="_blank">
+              <a href={sector.link} target="_blank" rel="noopener noreferrer">
                 <img
                   src={sector.icon}
                   alt={sector.title}
-                  className="w-full max-w-[400px] hover:animate-pulse"
+                  className="w-full md:max-w-[400px] hover:animate-pulse"
                 />
               </a>
               <p className="font-customBoldItalic text-porto-500 font-semibold text-2xl text-left w-full">

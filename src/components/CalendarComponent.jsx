@@ -120,7 +120,8 @@ const eventsData = [
     title: "digital nomads stories",
     details:
       "<p>Diaries of a journey through short clips from digital nomads @ Porto<p><br />",
-    start: "2024-11-13T14:30",
+    label: "14:30pm - 15:30pm",
+    start: "2024-11-13T15:00",
     end: "2024-11-13T15:30",
     legend: "Invest Porto.",
     category: "investPorto",
@@ -150,8 +151,9 @@ const eventsData = [
     id: 13,
     title: "LEME - Challenge prize announcement",
     details: "Come collect your prize!",
-    start: "2024-11-14T15:30",
-    end: "2024-11-14T16:00",
+    label: "15:30pm - 16:00pm",
+    start: "2024-11-14T15:00",
+    end: "2024-11-14T15:30",
     legend: "Leme.",
     category: "leme",
   },
@@ -198,12 +200,13 @@ const Modal = ({ event, onClose }) => {
 
 // Event component
 const Event = ({ event, onClick }) => {
+  const hasLabel = event.label !== undefined && event.label !== null;
   const startTime = dayjs(event.start).format("H:mm");
   const endTime = dayjs(event.end).format("H:mm");
-  
+
   const startHour = dayjs(event.start).hour();
   const endHour = dayjs(event.end).hour();
-  
+
   const startMinutes =
     dayjs(event.start).hour() * 60 + dayjs(event.start).minute();
   const duration = dayjs(event.end).diff(dayjs(event.start), "minute");
@@ -213,18 +216,23 @@ const Event = ({ event, onClick }) => {
       onClick={() => onClick(event)}
       className={`absolute ${
         categoryColors[event.category]
-      } p-2 border-t-4 w-full h-fit cursor-pointer flex flex-col justify-around items-start hover:z-20 hover:bg-zinc-300 hover:shadow-lg`}
+      } p-2 border-t-4 w-full h-fit cursor-pointer flex flex-col justify-around items-start hover:z-20 hover:bg-zinc-100 hover:shadow-lg transition-all duration-300 ease-in-out`}
       style={{
         top: `${(startMinutes - 540) * (112 / 60)}px`,
         minHeight: `${duration * (112 / 60)}px`,
       }}
     >
-      <p className="text-xs text-left font-inter text-zinc-500">
-        {startTime}
-        <span>{`${startHour < 12 ? "am" : "pm"}`}</span> - 
-        {endTime}
-        <span>{`${endHour < 12 ? "am" : "pm"}`}</span> <br />
-      </p>
+      {hasLabel ? (
+        <p className="text-xs text-left font-inter text-zinc-500">
+          {event.label}
+        </p>
+      ) : (
+        <p className="text-xs text-left font-inter text-zinc-500">
+          {startTime}
+          <span>{`${startHour < 12 ? "am" : "pm"}`}</span> -{endTime}
+          <span>{`${endHour < 12 ? "am" : "pm"}`}</span> <br />
+        </p>
+      )}
       <div className="w-full flex items-center mt-2 mb-2">
         <p className="font-inter font-normal text-black text-left text-sm max-w-full md:max-w-[300px] break-words whitespace-normal">
           {event.title}
@@ -329,12 +337,16 @@ const TabsView = ({ eventsByDay, onEventClick }) => {
             onClick={() => onEventClick(event)}
             className={`mb-4 p-2 ${categoryColors[event.category]} border-t-4 `}
           >
-            <p className="text-xs text-zinc-500">
-              {dayjs(event.start).format("H:mm")}
-              <span>{`${dayjs(event.start).hour() < 12 ? "am" : "pm"}`}</span> -
-              {dayjs(event.end).format("H:mm")}
-              <span>{`${dayjs(event.end).hour() < 12 ? "am" : "pm"}`}</span>
-            </p>
+            {event.label ? (
+              <p className="text-xs text-zinc-500">{event.label}</p>
+            ) : (
+              <p className="text-xs text-zinc-500">
+                {dayjs(event.start).format("H:mm")}
+                <span>{`${dayjs(event.start).hour() < 12 ? "am" : "pm"}`}</span>{" "}
+                -{dayjs(event.end).format("H:mm")}
+                <span>{`${dayjs(event.end).hour() < 12 ? "am" : "pm"}`}</span>
+              </p>
+            )}
             <p className="text-sm font-normal text-black">{event.title}</p>
             <div className="flex items-center gap-1 bg-white p-1 w-fit rounded-md">
               <span
@@ -342,7 +354,7 @@ const TabsView = ({ eventsByDay, onEventClick }) => {
                   categoryDotColors[event.category]
                 }`}
               ></span>
-              <p className=" text-sm text-left font-inter text-black">
+              <p className="text-sm text-left font-inter text-black">
                 {event.legend}
               </p>
             </div>

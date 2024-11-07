@@ -56,7 +56,7 @@ const EconomicSection = () => {
         </motion.h2>
         <div className="w-full flex justify-center lg:justify-around items-center gap-10 flex-wrap my-8">
           {messages.map((message) => (
-            <a href={message.link} target="_blank"
+            <a href={message.link} target="_blank" rel="noopener noreferrer"
               key={message.id}
               className="w-full max-w-96 flex flex-col justify-between items-center lg:items-start gap-1"
             >
