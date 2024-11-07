@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/webSummit",
+  base: "/",
   build: {
     chunkFileNames: "./assets/[name].[hash].js",
     assetFileNames: "./assets/[name].[hash].[ext]",
