@@ -97,7 +97,7 @@ const eventsData = [
   {
     id: 7,
     title:
-      "Toast to Porto | Great Wine Capitals + Tera  + Camara Portuguesa de Comércio e Indústria do Rio de Janeiro",
+      "Toast to Porto | Great Wine Capitals + Tera  + Câmara Portuguesa de Comércio e Indústria do Rio de Janeiro",
     details:
       "Fine Wines, long-standing bonds, that’s Porto. Join us for a Toast with Porto Wine at our Stand! <br /><br /> Winemakers gather and cross-reference knowledge. Conductors who compose symphonies based on thousands of possible notes.",
     start: "2024-11-13T12:00",
@@ -193,22 +193,35 @@ const eventsData = [
 const Modal = ({ event, onClose }) => {
   if (!event) return null;
 
+  const hasLabel = event.label !== undefined && event.label !== null; // Verificação do label
+  const startTime = dayjs(event.start).format("H:mm a");
+  const endTime = dayjs(event.end).format("H:mm a");
+
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center p-2 z-50">
       <div
-        className={`relative bg-white p-6 rounded-md shadow-md max-w-2xl w-full min-h-60`}
+        className="relative bg-white p-6 rounded-md shadow-md max-w-2xl w-full min-h-60"
       >
         <h2 className="text-xl font-inter font-bold text-porto-500 mb-2">
           {event.title}
         </h2>
-        <p className="text-sm text-blue-700 mb-4">
-          {dayjs(event.start).format("H:mm a")} -{" "}
-          {dayjs(event.end).format("H:mm a")}
-        </p>
+        
+        {/* Verifica se existe uma label */}
+        {hasLabel ? (
+          <p className="text-xs text-left font-inter text-zinc-500 mb-4">
+            {event.label}
+          </p>
+        ) : (
+          <p className="text-sm text-blue-700 mb-4">
+            {startTime} - {endTime}
+          </p>
+        )}
+
         <p
           className="text-sm text-porto-500"
           dangerouslySetInnerHTML={{ __html: event.details }}
         />
+        
         <XIcon
           size={20}
           onClick={onClose}
