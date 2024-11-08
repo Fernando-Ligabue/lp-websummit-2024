@@ -34,7 +34,7 @@ const categoryDotColors = {
 const eventsData = [
   {
     id: 1,
-    title: "Talk: A Taste of Culinary Action",
+    title: "Talk | A Taste of Culinary Action",
     details:
       "<p>An approach to gastronomy from an innovation and technology perspective,</strong> in collaboration with the Basque Culinary Center, with the aim of promoting entrepreneurship and generating new businesses in the agro-food sector.<br /><br /> Experts from the Basque Culinary Center and Chef Vasco Coelho Santos host an exciting conversation about the state of the art in Porto and the Basque Country. </p> <ul> <li>5' Opening:</strong> City Councillor for Tourism and Internationalisation, Catarina Santos Cunha</li><br /> <li>10' Gastronomy open ecosystem: Developing Innovation Ecosystems: Ander López (BCC - Entrepreneurship Manager)</li><br /> <li>40' Talking about Gastro-tech: An overview of the landscape in Porto (Catarina Santos Cunha, Vasco Coelho Santos, Ander Lopez, Moderator: Luís Alves, Revista de Vinhos)</li><br /> <li>15' Startup pitches: (3)</li><br /> <li>10' Keynote - Gastronomy meets Science: Erich Eichstetter (BCC - Tech Scout / LABe Digital Gastronomy Lab)</li> </ul> ",
     start: "2024-11-12T10:00",
@@ -45,7 +45,7 @@ const eventsData = [
   {
     id: 2,
     title:
-      "Toast to Porto | Great Wine Capitals -Fladgate, Symington and Sogrape",
+      "Toast to Porto | Great Wine Capitals | Fladgate, Symington and Sogrape",
     details:
       "Fine Wines, long-standing bonds, that’s Porto. Join us for a Toast with Porto Wine at our Stand! <br /><br /> Winemakers gather and cross-reference knowledge. Conductors who compose symphonies based on thousands of possible notes.",
     start: "2024-11-12T12:00",
@@ -55,7 +55,7 @@ const eventsData = [
   },
   {
     id: 3,
-    title: "Live Podcast: Founder Tales ",
+    title: "Live Podcast | Founder Tales ",
     details:
       "<p>‘Founder Tales’ is a podcast that takes its listeners behind the scenes of Portuguese startups and reveals the most unique stories of their founders.<br /><br />  In this special episode, recorded live at the Web Summit, we welcome Clara Gonçalves, co-founder of Inductiva.AI, to share her journey and insights into the vibrant entrepreneurial scene in Porto.",
     start: "2024-11-12T15:00",
@@ -66,7 +66,7 @@ const eventsData = [
   {
     id: 4,
     title:
-      "Toast to Porto |Great Wine Capitals SIM Conference: Startup Portugal",
+      "Toast to Porto | Great Wine Capitals SIM Conference: Startup Portugal",
     details:
       "Fine Wines, long-standing bonds, that’s Porto. Join us for a Toast with Porto Wine at our Stand! <br /><br /> Winemakers gather and cross-reference knowledge. Conductors who compose symphonies based on thousands of possible notes.",
     start: "2024-11-12T16:00",
@@ -76,7 +76,7 @@ const eventsData = [
   },
   {
     id: 5,
-    title: "Talk : Tech It or Leave It - 42 Porto x BLIP x ISS TECH",
+    title: "Talk | Tech It or Leave It - 42 Porto x BLIP x ISS TECH",
     details:
       "<p>A conversation between Pedro Santa Clara (42 Porto) and Gulherme Braz (BLIP), moderated by Isabel Geriante (ISS TECH) about the intersections of reskilling, upskilling and technological innovation.</p> ",
     start: "2024-11-13T09:30",
@@ -86,7 +86,7 @@ const eventsData = [
   },
   {
     id: 6,
-    title: 'Creating an Economy of Balance - Stage "Corporate Innovation"',
+    title: 'Creating an Economy of Balance | Stage "Corporate Innovation"',
     details:
       "<p>Creating an economy of balance: Ricardo Valente (Town Councillor) and Marko Cadez (President Chamber of Commerce and Industry of Serbia) will have a talk at the Corporate Innovation Stage.</p> ",
     start: "2024-11-13T11:00",
@@ -97,7 +97,7 @@ const eventsData = [
   {
     id: 7,
     title:
-      "Toast to Porto | Great Wine Capitals + Tera  + Câmara Portuguesa de Comércio e Indústria do Rio de Janeiro",
+      "Toast to Porto | Great Wine Capitals + Câmara Portuguesa de Comércio e Indústria do Rio de Janeiro",
     details:
       "Fine Wines, long-standing bonds, that’s Porto. Join us for a Toast with Porto Wine at our Stand! <br /><br /> Winemakers gather and cross-reference knowledge. Conductors who compose symphonies based on thousands of possible notes.",
     start: "2024-11-13T12:00",
@@ -107,7 +107,7 @@ const eventsData = [
   },
   {
     id: 8,
-    title: "Talk: digital nomads Porto - forging a new community",
+    title: "Talk | digital nomads Porto - forging a new community",
     details:
       "<p>Official launch & presentation of digital nomads Porto, a city-led initiative to showcase Porto as a hub for digital nomads. <br /><br /> Gonçalo Hall, CEO at NomadX and president of the Digital Nomad Association Portugal, joins the conversation and shares his thoughs on the benefits of location independence, flexibility, and diversity, as well as the contribution of digital nomads to the local economy & society in general.</p>",
     start: "2024-11-13T14:00",
@@ -139,7 +139,7 @@ const eventsData = [
   },
   {
     id: 11,
-    title: "Talk: How I Met Porto - Talks With The Ecossystem",
+    title: "Talk | How I Met Porto - Talks With The Ecosystem",
     details:
       "<p>Learn about Porto's attractiveness from InvestPorto and gain valuable insights directly from several world-renowned companies in the city: the Porto Leading Investors. </p><br /> ",
     start: "2024-11-14T10:00",
@@ -149,7 +149,7 @@ const eventsData = [
   },
   {
     id: 12,
-    title: "Talk: Organizational Innovation in Tourism: Trends and Transformation",
+    title: "Talk | Organizational Innovation in Tourism: Trends and Transformation",
     details:
       "<p>A conversation between Yotel and Porto Business School, moderated António Marto (Fórum Turismo) about Organizational Innovation in Tourism, its trends and transformation.</p><br /> ",
     label: "11:00am - 12:00pm",
@@ -170,8 +170,8 @@ const eventsData = [
   },
   {
     id: 14,
-    title: "LEME - Challenge prize announcement",
-    details: "Come collect your prize!",
+    title: "Porto Challenge Quiz powered by Leme | Winners Announcement",
+    details: "<p>Porto Challenge Quiz powered by Leme: How well do you know Porto? From Tourism to Demographics, Macroeeconomics to our Business ecosystem, test your knowledge based on our data visualisation platform Leme for socioeconomic data and have a chance to win an unforgettable experience in Porto! </p><br /> <p>*Porto Challenge is open to all Web Summit 2024 attendees, excluding staff of the Municipality of Porto and related parties involved in the organisation of Porto's participation in Web Summit 2024. Refer to Porto Challenge Rules <a href='https://leme-quiz.porto.pt/en' target='_blank' rel='noopener noreferrer' style=' tetxt-decoration: underline;'>here</a>.</p>",
     label: "15:30pm - 16:00pm",
     start: "2024-11-14T15:00",
     end: "2024-11-14T15:30",
@@ -180,7 +180,7 @@ const eventsData = [
   },
   {
     id: 15,
-    title: "Toast to Porto| Great Wine Capitals  ",
+    title: "Toast to Porto | Great Wine Capitals",
     details:
       "Fine Wines, long-standing bonds, that’s Porto. Join us for a Toast with Porto Wine at our Stand! <br /><br /> Winemakers gather and cross-reference knowledge. Conductors who compose symphonies based on thousands of possible notes.",
     start: "2024-11-14T16:00",
@@ -193,7 +193,7 @@ const eventsData = [
 const Modal = ({ event, onClose }) => {
   if (!event) return null;
 
-  const hasLabel = event.label !== undefined && event.label !== null; // Verificação do label
+  const hasLabel = event.label !== undefined && event.label !== null;
   const startTime = dayjs(event.start).format("H:mm a");
   const endTime = dayjs(event.end).format("H:mm a");
 
@@ -206,7 +206,6 @@ const Modal = ({ event, onClose }) => {
           {event.title}
         </h2>
         
-        {/* Verifica se existe uma label */}
         {hasLabel ? (
           <p className="text-xs text-left font-inter text-zinc-500 mb-4">
             {event.label}
