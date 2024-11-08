@@ -5,37 +5,39 @@ const EconomicSection = () => {
   const messages = [
     {
       id: 1,
-      link: "https://www.ef.com/wwen/epi/",
       number: "3",
       sup: "rd",
       highlight: "City with best English skills",
+      link: "https://www.ef.com/wwen/epi/",
       text: "Southern Europe",
       smaller: "EF Education First, 2022",
     },
     {
       id: 2,
-      link: "https://www.fdiintelligence.com/content/download/82064/2683542/file/fDi_0223_ECOF.pdf",
       number: "1",
       sup: "st",
       highlight: "Best large city for foreign investment",
+      link: "https://www.fdiintelligence.com/content/download/82064/2683542/file/fDi_0223_ECOF.pdf",
       text: "Europe",
       smaller: "FT / fDi Intelligence, 2023",
     },
     {
         id: 3,
-        link: "https://www.worldtravelawards.com/profile-34429-porto-tourism",
         number: "1",
         sup: "st",
-        highlight: "Metropolitan Destination 2024 Europe's Leading City Break Destination 2023",
+        highlight: "Seaside Metropolitan Destination 2024",
+        link: "https://www.worldtravelawards.com/award-europes-leading-seaside-metropolitan-destination-2024",
+        highlight2: "Europe's Leading City Break Destination 2023",
+        link2: "https://www.worldtravelawards.com/award-europes-leading-city-break-destination-2023",
         text: "",
         smaller: "World Travel Awards",
       },
     {
       id: 4,
-      link: "https://nomads.com/europe",
       number: "7",
       sup: "th",
       highlight: "Hottest destination for digital nomads",
+      link: "https://nomads.com/europe",
       text: "Europe",
       smaller: "Nomad List, Feb/2023",
     },
@@ -54,10 +56,9 @@ const EconomicSection = () => {
           <br />
           Economic Transformation
         </motion.h2>
-        <div className="w-full flex justify-center lg:justify-around items-center gap-10 flex-wrap my-8">
+        <div className="w-full flex justify-center lg:justify-around items-start gap-10 flex-wrap my-8">
           {messages.map((message) => (
-            <a href={message.link} target="_blank" rel="noopener noreferrer"
-              key={message.id}
+            <div key={message.id}
               className="w-full max-w-96 flex flex-col justify-between items-center lg:items-start gap-1"
             >
               <h4 className="font-custom text-porto-500 text-4xl text-center md:text-left">
@@ -65,7 +66,8 @@ const EconomicSection = () => {
                 <sup className="text-porto-500 font-thin">{message.sup}</sup>
               </h4>
               <p className="font-customBold text-porto-500 text-4xl text-center lg:text-left">
-                {message.highlight}
+                <a href={message.link} target="_blank" rel="noopener noreferrer" >{message.highlight}</a>
+                {message.highlight2 && <><br />& <a href={message.link2} target="_blank" rel="noopener noreferrer" >{message.highlight2}</a></>}
               </p>
               <p className="font-custom text-porto-500 text-4xl">
                 {message.text}
@@ -73,7 +75,7 @@ const EconomicSection = () => {
               <small className="font-custom text-porto-500 text-lg">
                 {message.smaller}
               </small>
-            </a>
+            </div>
           ))}
         </div>
         <div className="w-full flex justify-center lg:justify-between items-center gap-10 flex-wrap my-8">

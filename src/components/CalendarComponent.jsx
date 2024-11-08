@@ -76,7 +76,7 @@ const eventsData = [
   },
   {
     id: 5,
-    title: "Talk | Tech It or Leave It - 42 Porto x BLIP x ISS TECH",
+    title: "Talk | Tech It or Leave It: 42 Porto x BLIP x ISS TECH",
     details:
       "<p>A conversation between Pedro Santa Clara (42 Porto) and Gulherme Braz (BLIP), moderated by Isabel Geriante (ISS TECH) about the intersections of reskilling, upskilling and technological innovation.</p> ",
     start: "2024-11-13T09:30",
@@ -107,7 +107,7 @@ const eventsData = [
   },
   {
     id: 8,
-    title: "Talk | digital nomads Porto - forging a new community",
+    title: "Talk | digital nomads Porto: forging a new community",
     details:
       "<p>Official launch & presentation of digital nomads Porto, a city-led initiative to showcase Porto as a hub for digital nomads. <br /><br /> Gonçalo Hall, CEO at NomadX and president of the Digital Nomad Association Portugal, joins the conversation and shares his thoughs on the benefits of location independence, flexibility, and diversity, as well as the contribution of digital nomads to the local economy & society in general.</p>",
     start: "2024-11-13T14:00",
@@ -139,7 +139,7 @@ const eventsData = [
   },
   {
     id: 11,
-    title: "Talk | How I Met Porto - Talks With The Ecosystem",
+    title: "Talk | How I Met Porto: Talks With The Ecosystem",
     details:
       "<p>Learn about Porto's attractiveness from InvestPorto and gain valuable insights directly from several world-renowned companies in the city: the Porto Leading Investors. </p><br /> ",
     start: "2024-11-14T10:00",
