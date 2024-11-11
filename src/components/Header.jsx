@@ -49,7 +49,7 @@ const Header = () => {
             onClick={handleViewLocation}
           />
           
-          <div className="relative bg-white rounded-lg shadow-xl max-w-[90%] w-[600px] m-4">
+          <div className="relative bg-white rounded-lg shadow-xl max-w-[90%] w-[600px] m-4 top-16">
             <button
               onClick={handleViewLocation}
               className="absolute -right-3 -top-3 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors"
