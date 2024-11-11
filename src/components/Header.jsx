@@ -28,7 +28,7 @@ const Header = () => {
             <a href="https://websummit.com/appearances/lis24/851eff96-e5b8-4351-b701-3b9a75c725ad/porto" target="_blank" rel="noopener noreferrer" className="w-fit font-custom font-normal text-porto-500">
               <strong className="font-bold">WEB SUMMIT</strong> | LISBON
             </a>
-            <span className="w-fit font-custom font-semibold text-porto-500"
+            <span className="w-fit font-custom font-semibold text-porto-500 cursor-pointer"
               onClick={handleViewLocation}
             >Booth E110 | View Location</span>
             <a
